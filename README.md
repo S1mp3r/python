@@ -1,6 +1,8 @@
 Utilizando Python 3.12 em conjunto com as bibliotecas do Python “Flask” e “Request”:
 -> No Prompt de Comando digitar ambas as linhas separadamente para a instalação das bibliotecas:
 
+---
+
 # AMBIENTE VIRTUAL
 
 ---
@@ -9,7 +11,7 @@ py -m venv ./Conceissionaria
 pip install flask  
 pip install requests
 
-# OR
+Ou
 
 py -m venv ./Conceissionaria
 pip install -r .\requirements\requirements.txt
@@ -23,16 +25,19 @@ pip install -r .\requirements\requirements.txt
 pip install flask  
 pip install requests
 
-# OR
+Ou
 
-## pip install -r .\requirements\requirements.txt
+pip install -r .\requirements\requirements.txt
 
-===========================================================================================================================
+---
+
 Rode o primeiro o comando (caso isso nao seja feito, vai tomar erro de compilacao):
 flask --app .\routes\provedor\concessionaria_provedor.py run
-===========================================================================================================================
 
-===========================================================================================================================
+---
+
+---
+
 Logo em seguida, em outro cmd ou manualmente faca:
 py .\api\consumidor\concessionaria_consumidor.py
 
