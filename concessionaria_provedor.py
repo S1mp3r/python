@@ -5,7 +5,7 @@ from flask import request # type: ignore
 app = Flask(__name__)
 
 #Criado por Rafael
-carros = [{"modelo": "Carro1", "preco": 20000}, {"modelo": "Carro2", "preco": 25000}]
+carros = [{"modelo": "Chevrolet", "preco": 200000}, {"modelo": "Fiat", "preco": 25000}]
 vendas = []
 
 @app.route('/carros', methods=['GET'])
@@ -64,5 +64,6 @@ def remover_carro():
     else:
         return jsonify({"mensagem": f"Carro com modelo {modelo_carro} não encontrado"}), 404
 
-    if __name__ == '__main__':
-        app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
+    
